@@ -40,3 +40,8 @@ New-AavyIcon 192 (Join-Path $iconDir "icon-192.png")
 New-AavyIcon 512 (Join-Path $iconDir "icon-512.png")
 New-AavyIcon 512 (Join-Path $iconDir "icon-maskable-512.png") $true
 New-AavyIcon 180 (Join-Path $iconDir "apple-touch-icon.png")
+New-AavyIcon 120 (Join-Path $iconDir "apple-touch-icon-120.png")
+New-AavyIcon 152 (Join-Path $iconDir "apple-touch-icon-152.png")
+New-AavyIcon 167 (Join-Path $iconDir "apple-touch-icon-167.png")
+New-AavyIcon 180 (Join-Path $iconDir "apple-touch-icon-180.png")
+New-AavyIcon 32 (Join-Path $iconDir "favicon-32.png")

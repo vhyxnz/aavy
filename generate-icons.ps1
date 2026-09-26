@@ -34,14 +34,9 @@ function New-AavyIcon([int]$Size, [string]$Path, [bool]$Maskable = $false) {
   $bitmap.Dispose()
 }
 
-$iconDir = Join-Path $PSScriptRoot "icons"
-New-Item -ItemType Directory -Force -Path $iconDir | Out-Null
-New-AavyIcon 192 (Join-Path $iconDir "icon-192.png")
-New-AavyIcon 512 (Join-Path $iconDir "icon-512.png")
-New-AavyIcon 512 (Join-Path $iconDir "icon-maskable-512.png") $true
-New-AavyIcon 180 (Join-Path $iconDir "apple-touch-icon.png")
-New-AavyIcon 120 (Join-Path $iconDir "apple-touch-icon-120.png")
-New-AavyIcon 152 (Join-Path $iconDir "apple-touch-icon-152.png")
-New-AavyIcon 167 (Join-Path $iconDir "apple-touch-icon-167.png")
-New-AavyIcon 180 (Join-Path $iconDir "apple-touch-icon-180.png")
-New-AavyIcon 32 (Join-Path $iconDir "favicon-32.png")
+New-AavyIcon 192 (Join-Path $PSScriptRoot "icon-192.png")
+New-AavyIcon 512 (Join-Path $PSScriptRoot "icon-512.png")
+New-AavyIcon 512 (Join-Path $PSScriptRoot "icon-maskable-512.png") $true
+New-AavyIcon 180 (Join-Path $PSScriptRoot "apple-touch-icon.png")
+Copy-Item -Force (Join-Path $PSScriptRoot "apple-touch-icon.png") (Join-Path $PSScriptRoot "apple-touch-icon-precomposed.png")
+New-AavyIcon 32 (Join-Path $PSScriptRoot "favicon.png")

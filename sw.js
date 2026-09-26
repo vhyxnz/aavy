@@ -1,17 +1,14 @@
-const CACHE = "aavy-v2";
+const CACHE = "aavy-v6";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
-  "./icons/icon-192.png",
-  "./icons/icon-512.png",
-  "./icons/icon-maskable-512.png",
-  "./icons/apple-touch-icon.png",
-  "./icons/apple-touch-icon-120.png",
-  "./icons/apple-touch-icon-152.png",
-  "./icons/apple-touch-icon-167.png",
-  "./icons/apple-touch-icon-180.png",
-  "./icons/favicon-32.png"
+  "./icon-192.png",
+  "./icon-512.png",
+  "./icon-maskable-512.png",
+  "./apple-touch-icon.png",
+  "./apple-touch-icon-precomposed.png",
+  "./favicon.png"
 ];
 
 self.addEventListener("install", event => {

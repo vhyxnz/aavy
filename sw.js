@@ -1,4 +1,4 @@
-const CACHE = "aavy-v32";
+const CACHE = "aavy-v34";
 const APP_SHELL = [
   "./",
   "./index.html",
